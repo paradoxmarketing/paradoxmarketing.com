@@ -156,7 +156,7 @@ footer{
 
 <header>
 <div class="logo">
-  <img src="logo.png" alt="Paradox Marketing Logo" style="height:45px;">
+  <img src="logo.jpg" alt="Paradox Marketing Logo" style="height:45px;">
 </div>
 <nav>
 <a href="#">Home</a>
@@ -329,7 +329,7 @@ footer{
 
     <!-- RIGHT IMAGE -->
     <div class="hero-right">
-      <div class="laptop.jpg"></div>
+       <div class="circle-bg"></div>
       <img src="laptop.jpg"
            alt="Digital Marketing Expert"
            class="hero-image">
@@ -420,36 +420,158 @@ footer{
 
 </section>
 
-    <section class="section" id="clients">
-<h2>Our Clients </h2>
+   <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Clients Section</title>
 
-<div style="display:flex; flex-wrap:wrap; justify-content:center; gap:40px; align-items:center;">
+<style>
+    body{
+        margin:0;
+        font-family:Arial, sans-serif;
+        background:#f4f6fb;
+    }
 
-<img src="takshashila.jpg" alt="Client Logo">
-<img src="St.jpg" alt="Client Logo">
-<img src="aayushka.jpg" alt="Client Logo">
-<img src="akshaya.jpg" alt="Client Logo">
-<img src="athena.jpg" alt="Client Logo">
-<img src="dhilip.jpg" alt="Client Logo">
-<img src="fuji.jpg" alt="Client Logo">
-<img src="ghar mandir.jpg" alt="Client Logo">
-<img src="hexamap.jpg" alt="Client Logo">
-<img src="hotel comfort.jpg" alt="Client Logo">
-<img src="inbazar.jpg" alt="Client Logo">
-<img src="mit.jpg" alt="Client Logo">
-<img src="my medical.jpg" alt="Client Logo">
-<img src="redplanet.jpg" alt="Client Logo">
-<img src="seabird.jpg" alt="Client Logo">
-<img src="rethink.jpg" alt="Client Logo">
-<img src="shree.jpg" alt="Client Logo">
-<img src="sifm.jpg" alt="Client Logo">
-<img src="sri sidhi vinayagar.jpg" alt="Client Logo">
-<img src="total packaging.jpg" alt="Client Logo">
-<img src="tulsi madras.jpg" alt="Client Logo">
-<img src="upskill.jpg" alt="Client Logo">
-<img src="zeroinacademy.jpg" alt="Client Logo">
-</div>
+    .clients{
+        padding:80px 20px;
+        text-align:center;
+    }
+
+    .clients h2{
+        font-size:34px;
+        margin-bottom:50px;
+        color:#222;
+    }
+
+    .client-grid{
+        display:grid;
+        grid-template-columns:repeat(auto-fit, minmax(200px,1fr));
+        gap:40px;
+        max-width:1100px;
+        margin:auto;
+    }
+
+    .client-item{
+        background:#fff;
+        padding:30px;
+        border-radius:15px;
+        height:150px; /* Same height for all */
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        box-shadow:0 8px 25px rgba(0,0,0,0.06);
+        transition:0.3s ease;
+    }
+
+    .client-item:hover{
+        transform:translateY(-8px);
+        box-shadow:0 15px 35px rgba(0,0,0,0.1);
+    }
+
+    .client-item img{
+        max-width:100%;
+        max-height:80px; /* Same logo size */
+        object-fit:contain;
+        filter:grayscale(100%);
+        transition:0.3s ease;
+    }
+
+    .client-item:hover img{
+        filter:grayscale(0%);
+    }
+
+    @media(max-width:600px){
+        .client-item{
+            height:120px;
+        }
+
+        .client-item img{
+            max-height:60px;
+        }
+    }
+</style>
+
+</head>
+<body>
+
+<section class="clients">
+    <h2>Our Clients</h2>
+
+    <div class="client-grid">
+        <div class="client-item">
+            <img src="akshaya.jng" alt="Dr Akshaya">
+        </div>
+
+        <div class="client-item">
+            <img src="athena.jng" alt="Athena Global School">
+        </div>
+
+        <div class="client-item">
+            <img src="dhilip.jng" alt="Dhilip Studio">
+        </div>
+
+        <div class="client-item">
+            <img src="fuji.jpng" alt="Fuji Electric">
+        </div>
+
+        <div class="client-item">
+            <img src="aayushka.jng" alt="aayushka">
+        </div>
+         <div class="client-item">
+            <img src="hexamap.jng" alt="hexamap">
+        </div>
+         <div class="client-item">
+            <img src="hotel comfort.jng" alt="hotel">
+        </div>
+         <div class="client-item">
+            <img src="mit.jng" alt="mit">
+        </div>
+         <div class="client-item">
+            <img src="my medical.jng" alt="medical">
+        </div>
+         <div class="client-item">
+            <img src="readplanet.jng" alt="red">
+        </div>
+         </div>
+         <div class="client-item">
+            <img src="rethink.jng" alt="rethink">
+        </div>
+         <div class="client-item">
+            <img src="seabird.jng" alt="sea">
+              </div>
+         <div class="client-item">
+            <img src="shree" alt="shree">
+              </div>
+         <div class="client-item">
+            <img src="sri sidhi vinayagra.jng" alt="sri">
+              </div>
+         <div class="client-item">
+            <img src="takshashila.jng" alt="tak">
+        </div>
+     <div class="client-item">
+            <img src="total packaging.jng" alt="total">
+        </div>
+     <div class="client-item">
+            <img src="tulsi madras.jng" alt="tulsi">
+        </div>
+     <div class="client-item">
+            <img src="upskill.jng" alt="up">
+        </div>
+     <div class="client-item">
+            <img src="zeroinacademy.jng" alt="academy">
+        </div>
+     <div class="client-item">
+            <img src="inbazar.jng" alt="inbazar">
+        </div>
+        </div>
+    </div>
 </section>
+
+</body>
+</html>
+
 
 
   <style>
