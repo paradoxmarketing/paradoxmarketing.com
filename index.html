@@ -164,11 +164,137 @@ footer{
 </nav>
 </header>
 
-<section class="hero">
-<h1>The Digital Marketing Agency That Delivers <span class="highlight">Results</span></h1>
-<p>Paradox Marketing helps brands grow online through SEO, Social Media Marketing, Performance Ads, Content Creation and High-Converting Websites.</p>
-<a href="#contact" class="btn">Get Free Consultation</a>
+<section style="padding:100px 8%; background:linear-gradient(135deg,#f5f7ff,#eef1ff);">
+
+  <style>
+    .hero-container{
+        display:flex;
+        align-items:center;
+        justify-content:space-between;
+        flex-wrap:wrap;
+        gap:40px;
+    }
+
+    .hero-left{
+        flex:1;
+        min-width:300px;
+    }
+
+    .hero-right{
+        flex:1;
+        text-align:center;
+        min-width:300px;
+    }
+
+    .hero-left small{
+        color:#6c63ff;
+        letter-spacing:2px;
+        font-weight:600;
+    }
+
+    .hero-left h1{
+        font-size:42px;
+        margin:15px 0 20px;
+        line-height:1.2;
+    }
+
+    .hero-left p{
+        color:#555;
+        font-size:15px;
+        line-height:1.7;
+        margin-bottom:30px;
+        max-width:500px;
+    }
+
+    .hero-btn{
+        background:#1f3c88;
+        color:#fff;
+        padding:14px 30px;
+        border-radius:40px;
+        text-decoration:none;
+        display:inline-block;
+        font-weight:500;
+        transition:0.3s;
+    }
+
+    .hero-btn:hover{
+        background:#162a5e;
+    }
+
+    .hero-stats{
+        display:flex;
+        gap:40px;
+        margin-top:40px;
+        flex-wrap:wrap;
+    }
+
+    .stat h3{
+        font-size:22px;
+        color:#1f3c88;
+    }
+
+    .stat p{
+        font-size:13px;
+        color:#777;
+    }
+
+    .hero-image{
+        max-width:420px;
+        width:100%;
+    }
+
+    @media(max-width:768px){
+        .hero-container{
+            flex-direction:column;
+            text-align:center;
+        }
+        .hero-left h1{
+            font-size:30px;
+        }
+        .hero-stats{
+            justify-content:center;
+        }
+    }
+  </style>
+
+  <div class="hero-container">
+
+    <div class="hero-left">
+      <small>PARADOX MARKETING</small>
+      <h1>We’re Strategic Digital Marketing Agency</h1>
+      <p>
+        We help brands grow online through SEO, Social Media Marketing,
+        Performance Ads, Content Creation and High-Converting Websites.
+      </p>
+
+      <a href="#contact" class="hero-btn">Get Free Consultation</a>
+
+      <div class="hero-stats">
+        <div class="stat">
+          <h3>20+</h3>
+          <p>Brands Served</p>
+        </div>
+        <div class="stat">
+          <h3>94%</h3>
+          <p>Client Satisfaction</p>
+        </div>
+        <div class="stat">
+          <h3>3X</h3>
+          <p>Average ROI Growth</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-right">
+      <img src="https://via.placeholder.com/420x420"
+           alt="Digital Marketing Agency"
+           class="hero-image">
+    </div>
+
+  </div>
+
 </section>
+
 
 <section class="section" id="services">
 <h2>Our Services</h2>
