@@ -155,7 +155,9 @@ footer{
 <body>
 
 <header>
-<div class="logo">Paradox Marketing</div>
+<div class="logo">
+  <img src="logo.png" alt="Paradox Marketing Logo" style="height:45px;">
+</div>
 <nav>
 <a href="#">Home</a>
 <a href="#services">Services</a>
@@ -164,10 +166,10 @@ footer{
 </nav>
 </header>
 
-<section style="padding:100px 8%; background:linear-gradient(135deg,#f5f7ff,#eef1ff);">
+<section style="padding:100px 8%; background:#f4f6ff; overflow:hidden; position:relative;">
 
   <style>
-    .hero-container{
+    .hero-wrapper{
         display:flex;
         align-items:center;
         justify-content:space-between;
@@ -177,88 +179,128 @@ footer{
 
     .hero-left{
         flex:1;
-        min-width:300px;
-    }
-
-    .hero-right{
-        flex:1;
-        text-align:center;
-        min-width:300px;
+        min-width:320px;
     }
 
     .hero-left small{
-        color:#6c63ff;
-        letter-spacing:2px;
+        color:#5a67ff;
         font-weight:600;
+        letter-spacing:2px;
     }
 
     .hero-left h1{
-        font-size:42px;
-        margin:15px 0 20px;
-        line-height:1.2;
+        font-size:48px;
+        margin:20px 0;
+        line-height:1.15;
+        font-weight:700;
+        color:#111;
     }
 
     .hero-left p{
         color:#555;
-        font-size:15px;
+        font-size:16px;
         line-height:1.7;
+        max-width:520px;
         margin-bottom:30px;
-        max-width:500px;
     }
 
     .hero-btn{
         background:#1f3c88;
         color:#fff;
-        padding:14px 30px;
-        border-radius:40px;
+        padding:15px 35px;
+        border-radius:50px;
         text-decoration:none;
-        display:inline-block;
         font-weight:500;
-        transition:0.3s;
+        display:inline-block;
+        transition:0.3s ease;
     }
 
     .hero-btn:hover{
         background:#162a5e;
+        transform:translateY(-3px);
     }
 
     .hero-stats{
         display:flex;
-        gap:40px;
-        margin-top:40px;
+        gap:50px;
+        margin-top:50px;
         flex-wrap:wrap;
     }
 
-    .stat h3{
-        font-size:22px;
+    .hero-stats h3{
         color:#1f3c88;
+        font-size:24px;
     }
 
-    .stat p{
-        font-size:13px;
+    .hero-stats p{
+        font-size:14px;
         color:#777;
     }
 
+    .hero-right{
+        flex:1;
+        position:relative;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        min-width:320px;
+    }
+
+    /* Gradient Circle Background */
+    .circle-bg{
+        position:absolute;
+        width:380px;
+        height:380px;
+        background:linear-gradient(135deg,#6c63ff,#9f7aea);
+        border-radius:50%;
+        z-index:1;
+        animation:float 6s ease-in-out infinite;
+    }
+
+    /* Image */
     .hero-image{
-        max-width:420px;
-        width:100%;
+        position:relative;
+        width:350px;
+        border-radius:20px;
+        z-index:2;
+        box-shadow:0 20px 40px rgba(0,0,0,0.15);
+    }
+
+    /* Floating Animation */
+    @keyframes float{
+        0%{transform:translateY(0px);}
+        50%{transform:translateY(-15px);}
+        100%{transform:translateY(0px);}
     }
 
     @media(max-width:768px){
-        .hero-container{
+        .hero-wrapper{
             flex-direction:column;
             text-align:center;
         }
+
         .hero-left h1{
-            font-size:30px;
+            font-size:32px;
         }
+
         .hero-stats{
             justify-content:center;
+        }
+
+        .circle-bg{
+            width:280px;
+            height:280px;
+        }
+
+        .hero-image{
+            width:250px;
         }
     }
   </style>
 
-  <div class="hero-container">
+  <div class="hero-wrapper">
 
+    <!-- LEFT CONTENT -->
     <div class="hero-left">
       <small>PARADOX MARKETING</small>
       <h1>We’re Strategic Digital Marketing Agency</h1>
@@ -270,30 +312,33 @@ footer{
       <a href="#contact" class="hero-btn">Get Free Consultation</a>
 
       <div class="hero-stats">
-        <div class="stat">
+        <div>
           <h3>20+</h3>
           <p>Brands Served</p>
         </div>
-        <div class="stat">
+        <div>
           <h3>94%</h3>
           <p>Client Satisfaction</p>
         </div>
-        <div class="stat">
+        <div>
           <h3>3X</h3>
           <p>Average ROI Growth</p>
         </div>
       </div>
     </div>
 
+    <!-- RIGHT IMAGE -->
     <div class="hero-right">
-      <img src="https://via.placeholder.com/420x420"
-           alt="Digital Marketing Agency"
+      <div class="circle-bg"></div>
+      <img src="https://via.placeholder.com/350x400"
+           alt="Digital Marketing Expert"
            class="hero-image">
     </div>
 
   </div>
 
 </section>
+
 
 
 <section class="section" id="services">
